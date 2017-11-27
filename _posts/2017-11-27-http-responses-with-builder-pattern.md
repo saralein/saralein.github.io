@@ -7,7 +7,7 @@ categories: jekyll update
 
 For my current project, I am working on an HTTP server in Java.  While I started reading about design patterns a few months ago, working on this project has really brought them to the forefront. As I’ve encountered different issues in my server, it has been pretty nifty to apply different patterns as possible solutions and get a sense of their potential.
 
-One particular problem I have encountered is creating different responses from my server to client requests. At first, creating responses was quite simple. I only needed to respond to GET requests with either a 200 or 404 response. I created an interface with implementations for a 404 response, a 200 response for a file, and a 200 response for a directory to meet project requirements. My responses always looked about the same:
+One particular problem I have encountered is creating different responses from my server for client requests. At first, creating responses was quite simple. I only needed to respond to GET requests with either a 200 or 404 response. I created an interface with implementations for a 404 response, a 200 response for a file, and a 200 response for a directory to meet project requirements. My responses always looked about the same:
 
 {% highlight html %}
   HTTP/1.1 *code*
@@ -16,7 +16,7 @@ One particular problem I have encountered is creating different responses from m
   *body*
 {% endhighlight %}
 
-However, my server needed to start handling other types of requests. The first request to create a need for change was a redirect. To redirect a client request, my server needed to respond with a 302 Found status code. While every other response to this point used a simple Content-Type header, the redirect would need a Location header. It also wouldn’t have a body. None of my response implementations were quite right for this, and it was getting rather unsustainable to create different implementations of this interface. Additionally, I don’t know all combinations of codes, header, and bodies which might be needed in the future. I wanted to handle any combination easily.
+However, my server needed to start handling other types of requests. The first request to create a need for change was a redirect. To redirect a client request, my server needed to respond with a 302 Found status code. While every other response to this point used a simple Content-Type header, the redirect would need a Location header. It also wouldn’t have a body. None of my response implementations were quite right for this, and it was getting rather unsustainable to create different implementations of this interface. Additionally, I don’t know all combinations of codes, headers, and bodies which might be needed in the future. I wanted to handle any combination easily.
 
 I decided to try out the builder pattern.
 
@@ -38,13 +38,13 @@ The `Response` class could be a bare bones representation of a response. My clas
           return header;
       }
 
-      public byte[] getBody() {
+      public String getBody() {
           return body;
       }
   }
 {% endhighlight %}
 
-Using the `ResponseBuilder` class, we can add a status code, add a body, and add as many headers as we need before constructing a response and returning it with the `build` method.
+Using the `ResponseBuilder` class, we can add a status code, a body, and as many headers as we need before constructing a response and returning it with the `build` method.
 
 {% highlight java %}
   public class ResponseBuilder {
