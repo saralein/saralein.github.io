@@ -146,8 +146,6 @@ Our directory validator:
   }
 {% endhighlight %}
 
-Things to note:
-
 Notice how super is called in each of the constructors with arguments for our `flag` and `argError`.
 Notice the `@Override` and implementation provided in each for `checkForErrors`.
 
