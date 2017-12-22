@@ -9,7 +9,7 @@ The last two weeks I've been pair programming with some of our software crafters
 
 ### What is a repository?
 
-A repository simply represents a collection of entities.  A repository can hold entities, return them all, filter them.  It serves as an authoritative collection whose entities are understood by other parts of the application. How it does this is an implementation detail. Behind your repository, you could be pulling data from a file or a database.  However, the repository obtains information is an implementation details though.  The repository serves to abstract this storage method.
+A repository simply represents a collection of entities.  A repository can hold entities, return them all, filter them.  It serves as an authoritative collection whose entities are understood by other parts of the application. Behind your repository, you could be pulling data from a file or a database.  The repository serves to abstract this storage method.
 
 ### Place in the application
 
@@ -40,4 +40,5 @@ A repository may also be used in a similar fashion for creating persistence.  Ho
 
 ---
 
+<br>    
 This pattern enables us to create a class which can be used by any other business logic for retrieving information in a collection.  Additionally, our application can have as many repositories as needed in our domain.  We could have Users, Products, etc. all in different repositories and even using different gateways.
