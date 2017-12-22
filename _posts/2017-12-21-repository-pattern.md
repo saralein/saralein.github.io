@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Repository Pattern"
-date:   2017-12-08 10:00:00 -0600
+date:   2017-12-21 10:00:00 -0600
 categories: jekyll update
 ---
 
@@ -17,9 +17,9 @@ A repository simply represents a collection of entities.  A repository can hold 
 
 The repository connects the business logic, factories, and persistence of an application.  In reading more theoretical descriptions about repository pattern, I found myself wondering, "Well, what about the database?" The image below was extremely helpful in understanding the connection:
 
-<img src="/images/repo.png" style="width: 25%; margin: auto; display: block;">
+<img src="/images/repo.png" style="width: 50%; margin: auto; display: block;">
 
-<img src="/images/repository-with-interfaces.png" style="width: 25%; margin: auto; display: block;">
+<img src="/images/repository-with-interfaces.png" style="width: 50%; margin: auto; display: block;">
 
 Source: [The Repository Design Pattern](https://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804)
 
