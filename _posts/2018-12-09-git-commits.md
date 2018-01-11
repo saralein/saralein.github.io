@@ -49,13 +49,15 @@ Developers commonly capture the sum of this example in the following seven guide
 6. Wrap the body at 72 characters
 7. Use the body to explain what and why
 
-###1. Separate subject from body with a blank line
+### 1. Separate subject from body with a blank line
 
 In Pope's example, we see this as:
 
-> Capitalized, short (50 chars or less) summary
->
-> ...
+```
+Capitalized, short (50 chars or less) summary
+
+...
+```
 
 There is a clear visual distinction between the short subject line and the body of the commit provided by this blank line. How can we achieve this?
 
@@ -69,37 +71,33 @@ Not all commits require a subject and body though. Perhaps you've made some mino
 
 Between this short message and use of a `git diff`, this subject line conveys enough meaning for future programmers.
 
-
-###2. Limit the subject line to 50 characters
+### 2. Limit the subject line to 50 characters
 
 As the git-commit Manual Page says, 50 character subject lines is not a requirement. However, in addition to making variations of git log easier to review, it forces you to really think about the core of your commits. If the subject line is difficult to formulate in 50 characters, it may reveal a commit which is too large.
 
-
-###3. Capitalize the subject line
+### 3. Capitalize the subject line
 
 This guildline is rather straightforward. It is simply an issue of using
 
-> Fix typos in ReadMe
+    Fix typos in ReadMe
 
 versus
 
-> fix typos in ReadMe
+    fix typos in ReadMe
 
-
-###4. Do not end the subject line with a period
+### 4. Do not end the subject line with a period
 
 Again, another straightforward guideline. This one is as simple as using
 
-> Fix typos in ReadMe
+    Fix typos in ReadMe
 
 versus
 
-> Fix typos in ReadMe.
+    Fix typos in ReadMe.
 
 Aside from grammatically enforcing this as a subject, excluding the period results in less clutter and helps reduce your character count. (I have no clue why, but I've always included the period.)
 
-
-###5. Use the imperative mood in the subject line
+### 5. Use the imperative mood in the subject line
 
 According to wikipedia, "[t]he imperative mood is a grammatical mood that forms a command or request."
 
@@ -109,11 +107,10 @@ To write subject lines in the imperative mood, you may find it help to think, "T
 
 I personally have a tendency to write commits like, `Fixes typo in ReadMe`. If we use the suggestion above, we see the second subject line below makes more sense:
 
-> *This git commit will fixes typo in ReadMe.*
-> *This git commit will fix typo in ReadMe.*
+    This git commit will fixes typo in ReadMe.
+    This git commit will fix typo in ReadMe.
 
-
-###6. Wrap the body at 72 characters
+### 6. Wrap the body at 72 characters
 
 Git does not handle text wrapping. In order to maintain a clean commit, it is recommended that text be wrapped at 72 characters.
 
@@ -121,16 +118,12 @@ Meeting this guideline is easy enough. If you modify your `.vimrc` to include `f
 
 I have read recommendations for using Pope's `fugitive.vim` for this and other Git functionality in Vim. I have not explored this yet.
 
+### 7. Use the body to explain what and why
 
-###7. Use the body to explain what and why
-
-I've seen a lot of paragraphs on this guideline. For me, it's easy to think of it like this:
-
-> Your commit explains the what and why; your code explains the how.
+I've seen a lot of paragraphs on this guideline. For me, it's easy to think of it like this: your commit explains the what and why; your code explains the how.
 
 If you find it difficult to explain the what and why in a short summary, your commit may be too large. You may consider splitting it up.
 
-
-###Additional Recommendations
+### Additional Recommendations
 
 In general, programmers seem to think highly of Pope's commits. For further examples of better, cleaner commits, you can look no further than [his GitHub page](https://github.com/tpope).
