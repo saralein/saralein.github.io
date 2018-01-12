@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RxJS: Map vs. flatMap"
+title:  "RxJS: map vs. flatMap"
 date:   2018-01-12 10:00:00 -0600
 categories: jekyll update
 ---
@@ -13,11 +13,11 @@ While I still feel like there are loose ends in my mind, I feel like I do have a
 
 I combined the knowledge from this blog with code snippets from the official docs to gain a better understanding of map and flatMap.
 
-### `map`
+## `map`
 
-First of all, what do you think of when you think of a map? In most programming contexts, a map simply calls a function on each element of an array and creates a new array of the results.
+First of all, what do you think of when you think of a `map`? In most programming contexts, a map simply calls a function on each element of an array and creates a new array of the results.
 
-A typical map might be something like:
+A typical `map` might be something like:
 
 ```javascript
 => [1, 2, 3, 4, 5].map(val => val + 10);
@@ -47,7 +47,7 @@ If you were to run this, our output is now 5 Observables instead of 11, 12, 13, 
 
 This is where flatMap comes in.
 
-`flatMap`
+## `flatMap`
 
 `flatMap` is RxJS's answer to smushing our Observable of Observables above into an Observable of values.
 
@@ -59,6 +59,6 @@ const subscribe = example.subscribe(val => console.log(val));
 
 With a change from `map` to `flatMap` in the above code, we are back to an output of 11, 12, 13, 14, 15. The `flatMap` flattens the inner Observable.
 
-`mergeMap`
+## `mergeMap`
 
 During time spent with RxJS, you may see `mergeMap` used. Note that `mergeMap` is simply an alias for `flatMap`.
