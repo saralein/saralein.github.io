@@ -7,7 +7,7 @@ categories: jekyll update
 
 This week I spent some time pairing with a crafter in an Angular application and working with Observables. Observables are so reminiscent of Promises that the concept was familiar enough for me to follow along. However, I wanted to truly understand what we did. In particular, I was curious about the different types of maps for Observables in RxJS. My preliminary reading on the topic consisted mostly of small blogs and the official docs. I still did not feel like I understood.
 
-I started reading this blog: https://gist.github.com/staltz/868e7e9bc2a7b8c1f754. Shortly after, one of my mentors recommended it in case I hadn't seen it. So, I started reading it from the beginning.  Slower, much, much slower.
+I started reading [this blog](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754). Shortly after, one of my mentors recommended it in case I hadn't seen it. So, I started reading it from the beginning.  Slower, much, much slower.
 
 While I still feel like there are loose ends in my mind, I feel like I do have a better understanding and would encourage everyone to give the gist a look if you are interested in Reactive Programming, and would like to see examples with RxJS in particular.
 
