@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "`equals` and `hashCode`"
+title:  "Java equals and hashCode"
 date:   2018-02-23 10:00:00 -0600
 categories: jekyll update
 ---
