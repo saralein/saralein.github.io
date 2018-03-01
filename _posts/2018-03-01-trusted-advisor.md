@@ -41,7 +41,7 @@ In the middle portion of the book, Maister et al. point out what they believe ar
 **Envisioning an alternate reality**: what does that mean? (This one sounded the most foreign to me at first.) "Having defined the problem, some might think that the next logical step is to solve it." A problem might have many solutions, but how would the client/advisor know if go immediately from framing the issue to solving the problem? Envisioning an alternative reality allows for jointly envisioning alternatives and further exploring client needs. Advisors can add value and build trust by clarifying expectations, either by "getting the client to expand his or her dreams," or (in the other direction) by managing expectations which may be unrealistic.
 
 **Commitment** is the last stage in building trust. Commitment in this case means "...[ensuring] that the client understands what will be necessary to solve the problem and is willing to do what it takes to achieve the goals." Commitment is about a candid representation and mutual understanding of expectations, challenges, and risks.
-<br><br>
+<br><br><br>
 Many times during the course of my reading, I found myself recalling this quote from German philosopher Immanuel Kant:
    
 > *Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end.*  
