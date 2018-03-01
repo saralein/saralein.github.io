@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 This week I'm reading *The Trusted Advisor*, by David H. Maister, Charles H. Green, & Robert M. Galford. Sometimes when I imagine books in the genre of "business self-help", I imagine content which makes everyone involved in the business process feel mechanical and I wonder who behaves in this fashion. I was pleasantly surprised though to find a strong emphasis in *The Trusted Advisor* on the client/advisor relationship as a more personal relationship. In fact, the book is entirely framed in the context of building and maintaining a very human relationship built on trust.
-
+<br><br>
 ### Characteristics of Trust
 
 At the beginning of their book, Maister et al. outline the characteristics of trust:
@@ -21,8 +21,8 @@ At the beginning of their book, Maister et al. outline the characteristics of tr
 Their definition of trust looks much like the trust between friends or romantic partners. Indeed, Maister et al. draw anecdotes from personal relationships to illustrate the advisor/client relationship as a personal relationship. Through trust building, an advisor can progress (or at least strive to progress) their client relationship from service offering-based to needs-based to relationship-based, and finally to trust-based (the pinnacle).
 
 Before looking at how to build trust, I want to point out one item from the list I find particularly interesting: trust is different for the client than it is for the advisor. In a trust-based relationship, "...one does the trusting, and one is trusted." I think it's tempting for people to say, "Why don't you trust me?" without considering this dynamic. The client has personal risks for trusting you: "reputation, promotion opportunities, bonuses..." Empathy is important to me, so this is something I personally want to keep in mind.
-
-### How to build trust?
+<br><br>
+### How to Build Trust?
 
 In the middle portion of the book, Maister et al. point out what they believe are *key* stages in building trust.
 
@@ -41,9 +41,7 @@ In the middle portion of the book, Maister et al. point out what they believe ar
 **Envisioning an alternate reality**: what does that mean? (This one sounded the most foreign to me at first.) "Having defined the problem, some might think that the next logical step is to solve it." A problem might have many solutions, but how would the client/advisor know if go immediately from framing the issue to solving the problem? Envisioning an alternative reality allows for jointly envisioning alternatives and further exploring client needs. Advisors can add value and build trust by clarifying expectations, either by "getting the client to expand his or her dreams," or (in the other direction) by managing expectations which may be unrealistic.
 
 **Commitment** is the last stage in building trust. Commitment in this case means "...[ensuring] that the client understands what will be necessary to solve the problem and is willing to do what it takes to achieve the goals." Commitment is about a candid representation and mutual understanding of expectations, challenges, and risks.
-
 <br><br>
-
 Many times during the course of my reading, I found myself recalling this quote from German philosopher Immanuel Kant:
    
 > *Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end.*  
