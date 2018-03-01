@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Trusted Advisor"
-date:   2018-02-23 10:00:00 -0600
+date:   2018-03-01 10:00:00 -0600
 categories: jekyll update
 ---
 
