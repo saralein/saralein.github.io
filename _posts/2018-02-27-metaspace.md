@@ -37,7 +37,7 @@ As mentioned above, PermGen was the second region of memory prior to JDK 8. When
 
 As mentioned a few times above, PermGen no longer exists as of JDK 8. It has instead been replaced by metaspace. How is it different than PermGen? Unlike PermGen, metaspace is does not reside in the Java heap. Metaspace is instead allocated from native memory. What does this mean? The max space available for metadata is now the total available system memory. Metaspace by default now auto-increases size up to the amount allowed by the underlying operating system.  (Remember that in contrast, PermGen always has a fixed maximum size specified by JVM parameters.)
 
-Similar to heap information above, you can checkout metaspace specifications on Unix/Linux using the folllowing:
+Similar to heap information above, you can checkout metaspace specifications on Unix/Linux using the following:
 
 java -XX:+PrintFlagsFinal -version | grep Metaspace
 
@@ -45,8 +45,12 @@ You'll see something like this:
 
 <img src="/images/metaspace-size.png" style="width: 75%; margin: auto; display: block;">
 
-**Size**: Metaspace size can be fixed with the `-XX:MaxMetaspaceSize=<NNN>` where `<NNN>` is the maximum amount of space to be allocated for metadata. As mentioned above, the max space available could be the total available system memory. This is the default if the flag is not set.
+**Size**: Maximum metaspace size can be fixed with the `-XX:MaxMetaspaceSize=<NNN>` where `<NNN>` is the maximum amount of space to be allocated for metadata. As mentioned above, the max space available could be the total available system memory. This is the default if the flag is not set.
 
-**Garbage collection**: The initial amount of space for metadata can be set with the `-XX:MetaspaceSize=<NNN>` flag. Garnage collection occurs when metaspace grows to this metaspace size.
+The initial amount of space for metadata can be set with the `-XX:MetaspaceSize=<NNN>` flag.
 
-The frequency of garbage collection can be increased or decreased using two additional flags: `-XX:MinMetaspaceFreeRatio` and `-XX:MaxMetaspaceFreeRatio`. I'm still working on my understanding of these two flags.
+**Garbage collection**: When class metadata reaches a certain level (what is referred to as a high-water mark), garbage collection occurs. Initially this high-water mark is equal to the `MetaspaceSize`. After garbage collection occurs, the high-water mark may be lowered or raised depending on the amount of space freed by the garbage collection. The `-XX:MinMetaspaceFreeRatio` and `-XX:MaxMetaspaceFreeRatio` flags are used to specify the min and max free space ratios. Per Oracle:
+
+> If the committed space available for class metadata as a percentage of the total committed space for class metadata is greater than MaxMetaspaceFreeRatio, then the high-water mark will be lowered. If it is less than MinMetaspaceFreeRatio, then the high-water mark will be raised.
+
+The goal is to control the frequency of garbage collection by tuning the high-water mark.
