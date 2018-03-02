@@ -44,4 +44,4 @@ Many times during the course of my reading, I found myself recalling this quote 
    
 > *Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end.*  
 
-A lot of *The Trusted Advisor* has this sort of sentiment to me.  I really appreciate their approach, and I don't think I've done it justice. So, I recommend advisors checking out this book for themselves.
+A lot of *The Trusted Advisor* has this sort of sentiment to me.  I really appreciate their approach, and I don't think I can do it justice. So, I recommend advisors checking out this book for themselves.
