@@ -44,3 +44,9 @@ java -XX:+PrintFlagsFinal -version | grep Metaspace
 You'll see something like this:
 
 <img src="/images/metaspace-size.png" style="width: 75%; margin: auto; display: block;">
+
+**Size**: Metaspace size can be fixed with the `-XX:MaxMetaspaceSize=<NNN>` where `<NNN>` is the maximum amount of space to be allocated for metadata. As mentioned above, the max space available could be the total available system memory. This is the default if the flag is not set.
+
+**Garbage collection**: The initial amount of space for metadata can be set with the `-XX:MetaspaceSize=<NNN>` flag. Garnage collection occurs when metaspace grows to this metaspace size.
+
+The frequency of garbage collection can be increased or decreased using two additional flags: `-XX:MinMetaspaceFreeRatio` and `-XX:MaxMetaspaceFreeRatio`. I'm still working on my understanding of these two flags.
