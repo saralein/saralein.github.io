@@ -7,9 +7,9 @@ categories: jekyll update
 
 Last week I set up VisualVM for some memory profiling on my server. I haven't truly explored Java memory allocation before, so I was unfamiliar and curious what some of the terms I was seeing meant. Mostly, what are heap memory and metaspace?
 
-<img src="/images/heap.png" style="width: 75%; margin: auto; display: block;">
+<img src="/images/heap.png" style="width: 40%; margin: auto; display: inline; padding-left: 2em">
 
-<img src="/images/metaspace.png" style="width: 75%; margin: auto; display: block;">
+<img src="/images/metaspace.png" style="width: 40%; margin: auto; display: inline;">
 
 ### Heap Memory
 
@@ -23,7 +23,7 @@ If you're interesting in checking out heap size specifications, you can use the 
 
 I checked it out, and can see that for my server the starting heap size was around 135 MB (not 125 as noted above).
 
-<img src="/images/heap-size.png" style="width: 75%; margin: auto; display: block;">
+<img src="/images/heap-size.png" style="width: 100%; margin: auto; display: block;">
 
 We can also see the max heap size appears exactly as listed in VisualVM.
 
@@ -43,7 +43,7 @@ java -XX:+PrintFlagsFinal -version | grep Metaspace
 
 You'll see something like this:
 
-<img src="/images/metaspace-size.png" style="width: 75%; margin: auto; display: block;">
+<img src="/images/metaspace-size.png" style="width: 100%; margin: auto; display: block;">
 
 **Size**: Maximum metaspace size can be fixed with the `-XX:MaxMetaspaceSize=<NNN>` where `<NNN>` is the maximum amount of space to be allocated for metadata. As mentioned above, the max space available could be the total available system memory. This is the default if the flag is not set.
 
