@@ -18,13 +18,11 @@ At the beginning of their book, Maister et al. outline the characteristics of tr
 > 5. Is different for the client than it is for the advisor
 > 6. Is personal
 
-Their definition of trust looks much like the trust between friends or romantic partners. Indeed, Maister et al. draw anecdotes from personal relationships to illustrate the advisor/client relationship as a personal relationship. Through trust building, an advisor can progress (or at least strive to progress) their client relationship from service offering-based to needs-based to relationship-based, and finally to trust-based (the pinnacle).
-
-Before looking at how to build trust, I want to point out one item from the list I find particularly interesting: trust is different for the client than it is for the advisor. In a trust-based relationship, "...one does the trusting, and one is trusted." I think it's tempting for people to say, "Why don't you trust me?" without considering this dynamic. The client has personal risks for trusting you: "reputation, promotion opportunities, bonuses..." Empathy is important to me, so this is something I personally want to keep in mind.
+Their definition of trust looks much like the trust between friends or romantic partners. Indeed, Maister et al. draw anecdotes from personal relationships to illustrate the advisor/client relationship as a personal relationship.
 <br><br>
 ### How to Build Trust?
 
-In the middle portion of the book, Maister et al. point out what they believe are *key* stages in building trust.
+Through trust building, an advisor can progress (or at least strive to progress) their client relationship from service offering-based to needs-based to relationship-based, and finally to trust-based (the pinnacle). In the middle portion of the book, Maister et al. point out what they believe are *key* stages in building trust.
 
 > 1. Engage
 > 2. Listen
