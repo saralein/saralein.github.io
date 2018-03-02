@@ -51,7 +51,9 @@ The initial amount of space for metadata can be set with the `-XX:MetaspaceSize=
 
 As a note, out of memory errors can still occur if the `MaxMetaspaceSize` is set to point which is reached by the metadata.
 
-**Garbage collection**: When class metadata reaches a certain level (what is referred to as a high-water mark), garbage collection occurs. Initially this high-water mark is equal to the `MetaspaceSize`. After garbage collection occurs, the high-water mark may be lowered or raised depending on the amount of space freed by the garbage collection. The `-XX:MinMetaspaceFreeRatio` and `-XX:MaxMetaspaceFreeRatio` flags are used to specify the min and max free space ratios. Per Oracle:
+**Garbage collection**: When class metadata reaches a certain level (what is referred to as a high-water mark), garbage collection occurs. Initially this high-water mark is equal to the `MetaspaceSize`. After garbage collection occurs, the high-water mark may be lowered or raised depending on the amount of space freed by the garbage collection.
+
+The `-XX:MinMetaspaceFreeRatio` and `-XX:MaxMetaspaceFreeRatio` flags are used to specify the min and max free space ratios. Per Oracle:
 
 > If the committed space available for class metadata as a percentage of the total committed space for class metadata is greater than MaxMetaspaceFreeRatio, then the high-water mark will be lowered. If it is less than MinMetaspaceFreeRatio, then the high-water mark will be raised.
 
